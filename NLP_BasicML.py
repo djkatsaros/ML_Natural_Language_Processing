@@ -174,7 +174,7 @@ if __name__ =="__main__":
     try:
         data[phrase]
     except KeyError:
-        toPredict = input("Not a part of dataset, enter a valid index: ")
+        phrase = input("Not a part of dataset, enter a valid index: ")
     model_name = input('Use multinomial naive bayes or logistic regression model? ')
     vect = input("Use 'count' or 'tfidf' vectorizer? ")
     main(data, test, vect, model_name, phrase, toPredict)
