@@ -150,7 +150,7 @@ def main (data, test, vect: str, model_name: str, phrase: str, toPredict: str):
     y_pred = model.predict(X_val)
     print_performance(model, X_val, y_validate,vect,model_name)
 
-if __name__ ="__main__":
+if __name__ =="__main__":
     #import
     data_name = input("Enter path to training dataset: ")
     test_name = input("Enter path to test data: ")
